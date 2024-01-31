@@ -16,16 +16,16 @@ theme:
   palette:
     # Palette toggle for dark mode
     - scheme: slate
-      primary: custom
-      accent: deep purple
+      primary: black
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: switch to light mode
 
     # Palette toggle for light mode
     - scheme: default
-      primary: white
-      accent: white
+      primary: light blue
+      accent: lime
       toggle:
         icon: material/weather-night
         name: switch to dark mode
