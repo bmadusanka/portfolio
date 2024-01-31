@@ -1,0 +1,107 @@
+site_name: Bhagya Madusanka
+
+
+home:
+  image: images/bhagya_madusanka.jpg
+  tagline: Bhagya Madusanka
+  description: |
+    Senior DevOps Engineer at Devoteam.
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  language: en
+  custom_dir: docs/theme/
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: white
+      toggle:
+        icon: material/weather-night
+        name: switch to dark mode
+
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.path
+    - header.autohide
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - footnotes
+  - meta
+  - codehilite
+  - pymdownx.tilde
+  - pymdownx.progressbar
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+docs_dir: docs
+
+plugins:
+  - glightbox
+  - blog:
+      post_excerpt: required
+      post_url_date_format: yyyy
+      archive_url_format: "{date}"
+      pagination_per_page: 5
+
+nav:
+  - Home: index.md
+
+  - Blog:
+      - blog/index.md
+
+  - Portfolio:
+      - About me:
+          - Biography: portfolio/biography.md
+          - Work Experience: portfolio/experience.md
+          - Skills: portfolio/skills.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bmadusanka
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/madusankavpb/
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: |
+  Copyright &copy; 2024 <a href="https://github.com/bmadusanka" target="_blank" rel="noopener">Bhagya Madusanka</a>
